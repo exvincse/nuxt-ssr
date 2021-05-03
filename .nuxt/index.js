@@ -12,7 +12,6 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_router_7ea466ce from 'nuxt_plugin_router_7ea466ce' // Source: .\\router.js (mode: 'all')
 import nuxt_plugin_RegisterModule_dd532ab4 from 'nuxt_plugin_RegisterModule_dd532ab4' // Source: ..\\client\\plugins\\RegisterModule (mode: 'all')
 
 // Component: <ClientOnly>
@@ -169,10 +168,6 @@ async function createApp (ssrContext) {
   }
 
   // Plugin execution
-
-  if (typeof nuxt_plugin_router_7ea466ce === 'function') {
-    await nuxt_plugin_router_7ea466ce(app.context, inject)
-  }
 
   if (typeof nuxt_plugin_RegisterModule_dd532ab4 === 'function') {
     await nuxt_plugin_RegisterModule_dd532ab4(app.context, inject)

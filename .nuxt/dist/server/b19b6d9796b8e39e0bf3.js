@@ -1,1 +1,0 @@
-exports.ids=[3],exports.modules={42:function(e,t,r){"use strict";r.r(t);var n={head:()=>({title:"Users"})},o=r(1);var component=Object(o.a)(n,(function(){var e=this.$createElement;return(this._self._c||e)("div",[this._ssrNode("<h1>Users Index</h1>")])}),[],!1,(function(e){}),null,"08a996a3");t.default=component.exports}};

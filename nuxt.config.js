@@ -41,9 +41,9 @@ module.exports = {
    ** Nuxt.js dev-modules
    */
   buildModules: ["@nuxtjs/router"],
-  routerModule: {
-    fileName: "router"
-  },
+  // routerModule: {
+  //   fileName: "router"
+  // },
   /*
    ** Nuxt.js modules
    */
