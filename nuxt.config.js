@@ -55,7 +55,8 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    extractCSS: process.env.DEPLOY_ENV === 'GH_PAGES'
   },
   ...routerBase
 };
