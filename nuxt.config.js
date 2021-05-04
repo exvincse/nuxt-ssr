@@ -1,7 +1,7 @@
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ?
  {
   router: { 
-    base: '/nuxt-ssr/'
+    base: '/nuxt-ssr/dist/'
    } 
  } : {}
 
@@ -23,7 +23,7 @@ module.exports = {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: `${ process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxt-ssr/dist/' : '/' }favicon.ico` }]
   },
   /*
    ** Customize the progress-bar color

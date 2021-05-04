@@ -11,8 +11,8 @@ export const mutations = {
 export const actions = {
   nuxtServerInit({ commit }) {
     commit("SET_MESSAGE", "SERVER INIT");
-    commit("USER/SET_FIRST_NAME", "Alex");
-    commit("USER/SET_LAST_NAME", "Chen");
+    commit("USER/SET_FIRST_NAME", "a");
+    commit("USER/SET_LAST_NAME", "b");
   }
 };
 

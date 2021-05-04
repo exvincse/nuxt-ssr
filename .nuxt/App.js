@@ -17,7 +17,7 @@ import _1a3b20db from '..\\client\\layouts\\red.vue'
 const layouts = { "_blue": _2d21d150,"_default": _6f6c098b,"_red": _1a3b20db }
 
 export default {
-  head: {"title":"Home","titleTemplate":"My Nuxt SSR | %s","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Hello World"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+  head: {"title":"Home","titleTemplate":"My Nuxt SSR | %s","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Hello World"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fnuxt-ssr\u002Fdist\u002Ffavicon.ico"}],"style":[],"script":[]},
 
   render (h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })

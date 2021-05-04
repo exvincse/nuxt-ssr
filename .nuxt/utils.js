@@ -132,7 +132,7 @@ export async function setContext (app, context) {
       store: app.store,
       payload: context.payload,
       error: context.error,
-      base: '/nuxt-ssr/',
+      base: '/nuxt-ssr/dist/',
       env: {}
     }
     // Only set once
