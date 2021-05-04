@@ -1,7 +1,7 @@
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ?
  {
   router: { 
-    base: '/<repository-name>/'   
+    base: '/<repository-name>/'
    } 
  } : {}
 
@@ -40,7 +40,7 @@ module.exports = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/router"],
+  // buildModules: ["@nuxtjs/router"],
   // routerModule: {
   //   fileName: "router"
   // },
