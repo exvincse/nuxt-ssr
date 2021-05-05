@@ -1,6 +1,7 @@
 <template>
-  <div class="container">
-    <div>
+  <div>
+    {{ data }}
+    <div class="container">
       <logo />
       <h1 class="title">
         nuxt-ssr-example
@@ -28,10 +29,21 @@
 
 <script>
 import Logo from "~/components/Logo.vue";
-
+import axios from 'axios';
 export default {
+  data() {
+    return {
+      data: []
+    }
+  },
   components: {
     Logo
+  },
+  async asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
+    const data = await axios.get("https://randomuser.me/api/");
+    return {
+      data: data.data.results
+    }
   }
 };
 </script>
